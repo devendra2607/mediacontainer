@@ -1,0 +1,59 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #f0f0f0;
+}
+
+.multimedia-container {
+  position: relative;
+  flex: 1;
+  max-width: 70%;
+  height: 100%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.media {
+  width: 100%;
+  height: 100%
+  /* Add appropriate styles for the media content (image, GIF, or video) */
+}
+
+.favorite-icon {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s;
+}
+
+.favorite-icon.active {
+  background-color: #ff4081;
+}
+
+.dummy-title {
+  margin-left: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media screen and (max-width:750px) {
+  .container{
+    flex-direction:column;    
+  }
+}
